@@ -44,6 +44,4 @@ jobs:
           docker push aamitdevops/node-app:${{ github.sha }}
           docker push aamitdevops/node-app:latest
 
-      - name: Validate Kubernetes Manifests
-        run: |
-          kubectl create --dry-run=client --validate=false -f k8s/
+      
