@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: adapp-service
+  name: node-app-service
 
 spec:
   selector:
-    app: adapp
+    app: node-app
 
   ports:
     - protocol: TCP
